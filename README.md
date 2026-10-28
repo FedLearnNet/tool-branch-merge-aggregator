@@ -1,4 +1,4 @@
-# tool-branch-merge-aggregator
+# branch-merge-aggregator
 
 Combines two workflow tables by concatenating rows or columns, or by joining on a shared key.
 

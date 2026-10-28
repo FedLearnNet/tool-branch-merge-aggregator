@@ -55,8 +55,8 @@ config:
     type: CSV
 info:
   longDescription: null
-  name: tool-branch-merge-aggregator
+  name: branch-merge-aggregator
   shortDescription: Combines two workflow tables by concatenating rows or columns, or by joining on a shared key.
-  slug: tool-branch-merge-aggregator
+  slug: branch-merge-aggregator
   sourceUrl: https://github.com/FedLearnNet/tool-branch-merge-aggregator
   type: POST_PROCESSING
