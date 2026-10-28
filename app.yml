@@ -1,0 +1,62 @@
+config:
+  hyperparams:
+  - default: "concat_columns"
+    description: Merge mode to use for combining the two input DataFrames.
+    maxValue: null
+    minValue: null
+    name: mode
+    options:
+    - concat_rows
+    - concat_columns
+    - merge_on_key
+    pattern: null
+    type: CATEGORICAL
+  - default: ""
+    description: Column name used as merge key when mode is merge_on_key.
+    maxValue: null
+    minValue: null
+    name: key
+    options: []
+    pattern: null
+    type: STRING
+  - default: "inner"
+    description: Join strategy used when mode is merge_on_key.
+    maxValue: null
+    minValue: null
+    name: how
+    options:
+    - inner
+    - left
+    - right
+    - outer
+    pattern: null
+    type: CATEGORICAL
+  input:
+  - description: Left input DataFrame as CSV.
+    maxValue: null
+    minValue: null
+    name: left
+    required: true
+    shape: null
+    type: CSV
+  - description: Right input DataFrame as CSV.
+    maxValue: null
+    minValue: null
+    name: right
+    required: true
+    shape: null
+    type: CSV
+  output:
+  - description: The merged output DataFrame as CSV.
+    maxValue: null
+    minValue: null
+    name: output
+    shape: null
+    type: CSV
+info:
+  longDescription: null
+  name: tool-branch-merge-aggregator
+  shortDescription: Combines two workflow tables by concatenating rows or columns, or by joining on a shared key.
+  slug: tool-branch-merge-aggregator
+  sourceUrl: https://github.com/FedLearnNet/tool-branch-merge-aggregator
+  type: POST_PROCESSING
